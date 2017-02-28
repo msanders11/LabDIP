@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class DefaultMessageInput implements MessageInputSource {
 
     
-    private String[] defaultMessages = {"Hello World.", "Hello Java", "Hello"};
+    private String[] defaultMessages = {"Hello World.", "Hello Java", "Hello", "Hello Programmers"};
     
     @Override
     public final String getInput() {

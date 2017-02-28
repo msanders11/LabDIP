@@ -11,8 +11,8 @@ package dip.lab3.student.solution1;
  */
 public class MessagingService {
 
-    MessageInputSource input;
-    MessageOutputSource output;
+    private MessageInputSource input;
+    private MessageOutputSource output;
 
     public MessagingService(MessageInputSource input, MessageOutputSource output) {
         setInput(input);
@@ -26,22 +26,22 @@ public class MessagingService {
         output.outputMessage(line);
     }
 
-    public MessageInputSource getInput() {
+    public final MessageInputSource getInput() {
         return input;
     }
 
-    public void setInput(MessageInputSource input) {
+    public final void setInput(MessageInputSource input) {
         if (input == null || input.equals("")) {
             throw new IllegalArgumentException("Valid input needed.");
         }
         this.input = input;
     }
 
-    public MessageOutputSource getOutput() {
+    public final MessageOutputSource getOutput() {
         return output;
     }
 
-    public void setOutput(MessageOutputSource output) {
+    public final void setOutput(MessageOutputSource output) {
         if (output == null || output.equals("")) {
             throw new IllegalArgumentException("Valid output needed.");
         }

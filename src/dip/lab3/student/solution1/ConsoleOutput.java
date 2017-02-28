@@ -13,7 +13,7 @@ public class ConsoleOutput implements MessageOutputSource {
     
     
     @Override
-    public void outputMessage(String line) {
+    public final void outputMessage(String line) {
         System.out.println(line);
     }
 }

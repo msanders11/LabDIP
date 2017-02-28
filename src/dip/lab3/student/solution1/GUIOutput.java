@@ -15,7 +15,7 @@ public class GUIOutput implements MessageOutputSource {
     
     
     @Override
-    public void outputMessage(String line) {
+    public final void outputMessage(String line) {
         JOptionPane.showMessageDialog(null, line);
     }
 }
