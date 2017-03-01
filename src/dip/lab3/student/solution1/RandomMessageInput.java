@@ -6,16 +6,16 @@
 package dip.lab3.student.solution1;
 
 import java.util.Random;
-import java.util.Scanner;
+
 
 /**
  *
  * @author Mike
  */
-public class DefaultMessageInput implements MessageInputSource {
+public class RandomMessageInput implements MessageInputSource {
 
     
-    private String[] defaultMessages = {"Hello World.", "Hello Java", "Hello", "Hello Programmers"};
+    private String[] defaultMessages = {"Hello World.", "Hello Java", "Hello", "Hello Programmers", "Goodbye"};
     
     @Override
     public final String getInput() {

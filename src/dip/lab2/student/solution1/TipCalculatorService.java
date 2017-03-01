@@ -24,7 +24,6 @@ public class TipCalculatorService {
             throw new IllegalArgumentException("tip calculator");
         } 
         this.tipCalculator = tipCalculator;
-        
     }
     
     

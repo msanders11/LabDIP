@@ -13,11 +13,11 @@ public class Startup {
     
     public static void main(String[] args) {
         
-        MessageInputSource input = new DefaultMessageInput();
+        MessageInputSource input = new KeyboardInput();
         MessageOutputSource output = new GUIOutput();
         
         MessagingService messagingService = new MessagingService(input, output);
-        messagingService.message();
+        messagingService.produceMessage();
         
         
         System.out.println("Program Ended");

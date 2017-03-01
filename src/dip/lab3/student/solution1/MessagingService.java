@@ -21,7 +21,7 @@ public class MessagingService {
         //this.output = output;
     }
 
-    public final void message() {
+    public final void produceMessage() {
         String line = input.getInput();
         output.outputMessage(line);
     }
